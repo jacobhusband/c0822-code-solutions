@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Forms</title>
+</head>
+<body>
+  <h1>Coding Form!</h1>
+  <form id="form">
+    <div>
+      <label for="email">Email</label>
+    </div>
+    <input type="text" name="useremail" id="email">
+    <div>
+      <label for="iscodingcool">Why is coding cool?</label>
+    </div>
+    <select name="iscodingcoolresponses" id="iscodingcool">
+      <option value="none">Select an option</option>
+      <option value="interesting">Because it's interesting</option>
+      <option value="fun">Because it's fun</option>
+      <option value="poweful">Because it's powerful</option>
+    </select>
+    <p>Favorite Language (choose one)</p>
+    <input type="radio" name="language" id="html" value="HTML">
+    <label for="html">HTML</label>
+    <input type="radio" name="language" id="css" value="CSS">
+    <label for="css">CSS</label>
+    <input type="radio" name="language" id="javascript" value="JavaScript">
+    <label for="javascript">JavaScript</label>
+    <p>Would you like to signup for more information?</p>
+    <input type="checkbox" name="signmeup" id="signup" value="signedup">
+    <label for="signup">Sign me up!</label>
+    <div>
+      <label for="commentarea">Comments</label>
+    </div>
+    <textarea name="comments" id="commentarea" cols="30" rows="10"></textarea>
+    <div>
+      <input type="submit" value="Submit" id="submit">
+    </div>
+  </form>
+  <script>
+    document.getElementById('submit').addEventListener('click', () => {
+      const form = document.getElementById('form');
+      form.querySelector('#email').textContent = '';
+      form.querySelector('#iscodingcool').value = 'none';
+      form.querySelector('#html').checked = false;
+      form.querySelector('#css').checked = false;
+      form.querySelector('#javascript').checked = false;
+      form.querySelector('#signup').checked = false;
+      form.querySelector('#commentarea').textContent = '';
+    })
+  </script>
+</body>
+</html>
