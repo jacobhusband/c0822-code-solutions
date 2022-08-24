@@ -4,6 +4,7 @@ button {
 
 button:hover {
   background-color: black;
+  cursor: pointer;
   color: white;
 }
 
