@@ -1,0 +1,73 @@
+body {
+  font-family: "Atlas Grotesque", sans-serif;
+  padding: 0 1rem 1rem;
+}
+
+h1 {
+  font-family: "Brandon Grotesque", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #ec5f5a;
+  text-align: center;
+}
+
+label {
+  font-family: "Brandon Grotesque", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #363636;
+  padding: 0 0.75rem;
+  letter-spacing: 0.5px;
+}
+
+input[type="text"] {
+  font-family: AtlasGrotesk, sans-serif;
+  font-size: 1rem;
+  border-color: #c2c3c3;
+  border-width: 1px;
+  border-radius: 0.4rem;
+  border-style: solid;
+  width: 100%;
+  padding: 0.8rem 0.75rem 0.7rem;
+  margin-top: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+input[type="submit"] {
+  font-family: "Brandon Grotesque", sans-serif;
+  margin-top: 0.75rem;
+  border: none;
+  color: #fef6f6;
+  font-weight: 500;
+  background-color: #ec5c57;
+  font-size: 1rem;
+  border-radius: 1.5rem;
+  padding: 0.5rem 1.25rem;
+}
+
+div.inputs {
+  width: 100%;
+}
+
+div.submit-div {
+  width: 100%;
+  text-align: right;
+}
+
+select {
+  font-family: "Brandon Grotesque", sans-serif;
+  margin-top: 0.25rem;
+  width: 100%;
+  padding: 0.6rem 0.25rem;
+  border-radius: 0.25rem;
+  border-color: #c2c3c3;
+  background-color: #f3f3f3;
+  color: #505050;
+  font-size: 1rem;
+}
+
+input::placeholder {
+  color: rgb(155 155 155);
+  letter-spacing: 0.25px;
+  font-weight: 300;
+}
