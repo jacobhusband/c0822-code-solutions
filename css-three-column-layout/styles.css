@@ -22,12 +22,13 @@ h2 {
 
 h3 {
   font-size: 1.5rem;
-  margin: 2rem 0 1rem;
+  margin: 2rem 0 0;
 }
 
 p {
-  margin: 1.5rem;
+  margin: 1rem 1.5rem;
   color: #68d5a7;
+  line-height: 1.4rem;
 }
 
 .container {
