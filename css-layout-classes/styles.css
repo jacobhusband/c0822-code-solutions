@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+}
+
+.one-third {
+  flex-basis: calc(100%/3);
+}
+
+.one-fourth {
+  flex-basis: 25%;
+}
+
+.two-thirds {
+  flex-basis: calc(200%/3);
+}
