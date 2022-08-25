@@ -1,0 +1,104 @@
+h1 {
+  font-size: 3rem;
+  letter-spacing: 0.25rem;
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  margin-top: 2rem;
+  font-size: 0.95rem;
+  letter-spacing: 0.05rem;
+}
+
+p {
+  color: #717171;
+  line-height: 1.7rem;
+  font-size: 0.9rem;
+}
+
+img {
+  width: 100%;
+}
+
+button {
+  font-family: Karla, sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: 0.05rem;
+  color: #d14c45;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #d14c45;
+  background-color: white;
+  padding: 0.5rem 2rem;
+}
+
+.container {
+  max-width: 950px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+}
+
+.center-row-horizontal {
+  justify-content: center;
+}
+
+.center-row-vertical {
+  align-items: center;
+}
+
+.center-align {
+  text-align: center;
+}
+
+.two-thirds {
+  flex-basis: calc(200%/3);
+}
+
+.fb-70pc {
+  flex-basis: 70%;
+}
+
+.fb-30pc {
+  flex-basis: 30%;
+}
+
+.mt-2rem {
+  margin-top: 2rem;
+}
+
+.mt-1rem {
+  margin-top: 1rem;
+}
+
+.m-1rem {
+  margin: 1rem;
+}
+
+.w-70pc {
+  width: 70%;
+}
+
+.fb-50pc {
+  flex-basis: 50%;
+}
+
+.h3-mt-small {
+  margin-top: -0.9rem;
+}
+
+.pd-pt5rem {
+  padding: 0.5rem;
+}
+
+.mr-2rem {
+  margin-right: 2rem;
+}
+
+.m-auto {
+  margin: auto;
+}
