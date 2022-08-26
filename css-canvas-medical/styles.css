@@ -158,6 +158,10 @@ a {
   margin-bottom: 80px;
 }
 
+.gap-30px {
+  gap: 30px;
+}
+
 .homescreen-img-overlay {
   position: absolute;
   top: 3rem;
@@ -208,7 +212,8 @@ a {
 }
 
 .clinicians-section-p,
-.ready-to-learn-section {
+.ready-to-learn-section,
+.footer-section {
   color: #737373;
   line-height: 1.5rem;
 }
@@ -253,6 +258,10 @@ a {
 }
 
 .white-canvas-logo {
-  width: 120px;
+  width: 125px;
   margin-bottom: 2.5rem;
+}
+
+.footer-section {
+  padding: 2.75rem 4.5rem;
 }
