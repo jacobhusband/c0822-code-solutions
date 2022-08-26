@@ -69,8 +69,7 @@ a {
   border-bottom: 1px solid #e3e6e9;
   flex-wrap: nowrap;
   align-items: center;
-  padding: 0.5rem 5rem;
-  margin-bottom: 4rem;
+  padding: 0.5rem 5.5rem;
   position: fixed;
   background-color: #fefefe;
   z-index: 5;
