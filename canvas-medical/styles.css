@@ -2,6 +2,10 @@ img {
   width: 100%;
 }
 
+body {
+  font-family: "Tiempos Headline", sans-serif;
+}
+
 .container {
   min-width: 900px;
 }
@@ -91,4 +95,38 @@ img {
   overflow: hidden;
   width: inherit;
   height: 490px;
+}
+
+.homescreen-img-overlay {
+  position: absolute;
+  top: 3rem;
+  left: 4rem;
+  font-weight: normal;
+  color: white;
+}
+
+.homescreen-img-overlay-h1 {
+  font-size: 2.2rem;
+  letter-spacing: 0.02rem;
+  font-weight: normal;
+  margin-bottom: 0.1rem;
+}
+
+.homescreen-img-overlay-p {
+  font-family: Avenir, sans-serif;
+  color: #f3f3f3;
+  font-size: 0.88rem;
+  letter-spacing: 0.02rem;
+  line-height: 1.5rem;
+  margin-bottom: 1.9rem;
+}
+
+.homescreen-img-overlay-button {
+  font-family: Avenir, sans-serif;
+  font-size: 1.1rem;
+  border-style: none;
+  border-radius: 5px;
+  background-color: #2b4866;
+  color: rgb(237 237 237);
+  padding: 0.75rem 2.75rem;
 }
