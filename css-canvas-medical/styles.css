@@ -123,6 +123,14 @@ p {
   max-width: 87%;
 }
 
+.mw-47pc {
+  max-width: 47%;
+}
+
+.mw-45pc {
+  max-width: 45%;
+}
+
 .mw-36pc {
   max-width: 36%;
 }
@@ -175,6 +183,22 @@ p {
 
 .mb-80px {
   margin-bottom: 80px;
+}
+
+.mb-0pt75rem {
+  margin-bottom: 0.75rem;
+}
+
+.fs-0pt75rem {
+  font-size: 0.75rem;
+}
+
+.fs-0pt85rem {
+  font-size: 0.8rem;
+}
+
+.fs-2rem {
+  font-size: 2rem;
 }
 
 .pdr-2rem {
@@ -301,4 +325,21 @@ p {
 
 .off-white-p {
   color: rgb(225 225 225);
+}
+
+.blue-anchor {
+  color: #114565;
+  font-weight: 500;
+}
+
+.gray-text {
+  color: #605e62;
+}
+
+.light-text {
+  font-weight: 100;
+}
+
+.what-we-believe {
+  padding-top: 3rem;
 }
