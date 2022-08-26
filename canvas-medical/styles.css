@@ -48,6 +48,7 @@ body {
   position: fixed;
   background-color: #fefefe;
   z-index: 5;
+  top: 0;
 }
 
 .flex-center {
@@ -101,8 +102,8 @@ body {
   height: 490px;
 }
 
-.top-200 {
-  top: 120px;
+.mt-8rem {
+  margin-top: 8rem;
 }
 
 .homescreen-img-overlay {
