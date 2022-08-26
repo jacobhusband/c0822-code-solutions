@@ -1,3 +1,11 @@
+img {
+  width: 100%;
+}
+
+.container {
+  min-width: 900px;
+}
+
 .nav-bar-logo {
   font-family: Avenir, sans-serif;
   font-weight: 500;
@@ -18,7 +26,7 @@
   font-family: Avenir, sans-serif;
   width: 100px;
   height: 40px;
-  font-size: 1rem;
+  font-size: 0.95rem;
 }
 
 .nav-links {
@@ -31,6 +39,7 @@
   flex-wrap: nowrap;
   align-items: center;
   padding: 0.5rem 5rem;
+  margin-bottom: 4rem;
 }
 
 .flex-center {
@@ -52,4 +61,34 @@
 
 .ml-1rem {
   margin-left: 1rem;
+}
+
+.mw-85pc {
+  max-width: 85%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.bottom-30 {
+  bottom: 30px;
+}
+
+.pos-rel {
+  position: relative;
+}
+
+.homescreen-img-filter {
+  filter: contrast(80%) grayscale(20%) brightness(85%);
+}
+
+.margin-auto {
+  margin: auto;
+}
+
+.crop {
+  overflow: hidden;
+  width: inherit;
+  height: 490px;
 }
