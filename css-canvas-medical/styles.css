@@ -30,6 +30,7 @@ h3 {
 button {
   background-color: #2b4866;
   color: rgb(237 237 237);
+  border-style: none;
 }
 
 .container {
@@ -42,7 +43,6 @@ button {
 }
 
 .nav-bar-button {
-  border-style: none;
   border-radius: 3px;
   box-shadow: 1px 1px 1px 0 rgb(0 0 0 / 20%);
   width: 100px;
@@ -174,7 +174,6 @@ button {
 
 .homescreen-img-overlay-button {
   font-size: 1.1rem;
-  border-style: none;
   border-radius: 5px;
   padding: 0.75rem 2.75rem;
 }
@@ -211,7 +210,10 @@ button {
 }
 
 .ready-to-learn-button {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
+  border-radius: 5px;
+  padding: 0.85rem 3rem;
+  font-weight: 300;
 }
 
 .ready-to-learn-h2 {
