@@ -25,6 +25,6 @@ img {
   flex-direction: column;
 }
 
-.one-fourth {
+.column-fourth {
   flex-basis: 25%;
 }
