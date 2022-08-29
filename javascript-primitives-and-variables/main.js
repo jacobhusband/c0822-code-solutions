@@ -1,8 +1,8 @@
-const fullName = 'Jacob Husband';
-const isCool = true;
-const totalPets = 0;
-const unknown = null;
-let never;
+var fullName = 'Jacob Husband';
+var isCool = true;
+var totalPets = 0;
+var unknown = null;
+var never;
 
 console.log('Full name: ', fullName);
 console.log('Am I cool? ', isCool);
