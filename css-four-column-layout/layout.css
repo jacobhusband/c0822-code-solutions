@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  max-width: 910px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.column-fourth {
+  flex-basis: 25%;
+}
