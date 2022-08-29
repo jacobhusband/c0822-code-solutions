@@ -16,7 +16,7 @@ var students = ['Matt', 'Eugene', 'Anthony', 'Brandon'];
 
 var numberOfStudents = students.length;
 
-console.log(`There are ${numberOfStudents} in this class.`);
+console.log(`There are ${numberOfStudents} students in this class.`);
 
 var lastIndex = numberOfStudents - 1;
 
