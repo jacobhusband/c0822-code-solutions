@@ -24,3 +24,7 @@ img {
   display: flex;
   flex-direction: column;
 }
+
+.one-fourth {
+  flex-basis: 25%;
+}
