@@ -61,7 +61,7 @@ var orderHistory = [
         initial_price: 33.99,
         return_window_date: 20200804,
       }
-    ]
+    ],
     total_price: 138.93,
     id: "113-2883177-2648248",
     order_date: 20200703,
