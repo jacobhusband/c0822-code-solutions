@@ -24,10 +24,10 @@
 // console.log(`isEven(3)`, isEven(3));
 // console.log(`startsWithJ('Jake')`, startsWithJ("Jake"));
 // console.log(`startsWithJ('Kake')`, startsWithJ("Kake"));
-// console.log(`isOldEnoughToDrink(${bart.age})`, isOldEnoughToDrink(bart.age));
-// console.log(`isOldEnoughToDrink(${shia.age})`, isOldEnoughToDrink(shia.age));
-// console.log(`isOldEnoughToDrive(${bart.age})`, isOldEnoughToDrive(bart.age));
-// console.log(`isOldEnoughToDrive(${shia.age})`, isOldEnoughToDrive(shia.age));
+// console.log(`isOldEnoughToDrink(${bart.age})`, isOldEnoughToDrink(bart));
+// console.log(`isOldEnoughToDrink(${shia.age})`, isOldEnoughToDrink(shia));
+// console.log(`isOldEnoughToDrive(${bart.age})`, isOldEnoughToDrive(bart));
+// console.log(`isOldEnoughToDrive(${shia.age})`, isOldEnoughToDrive(shia));
 // console.log(
 //   `isOldEnoughToDrinkAndDrive(${bart.age})`,
 //   isOldEnoughToDrinkAndDrive(bart.age)
