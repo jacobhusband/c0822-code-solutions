@@ -15,10 +15,27 @@ h3 {
   font-weight: 500;
 }
 
+div > h3:nth-child(3) > span.gray {
+  text-decoration: line-through;
+  margin-left: 0.3rem;
+}
+
+div > h3:nth-child(3) > span.highlight {
+  background-color: #fff0e2;
+}
+
+.zoom-in {
+  object-fit: cover;
+}
+
 .gray {
-  color: #eaeae9;
+  color: #e0e0dd;
 }
 
 .pdlr02r {
   padding: 0 0.2rem;
+}
+
+.mlr02r {
+  margin: 0 0.2rem;
 }
