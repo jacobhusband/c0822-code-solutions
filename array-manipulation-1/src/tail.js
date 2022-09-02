@@ -7,12 +7,9 @@
 
 function tail(arr) {
   var emptyArr = [];
-  if (arr.length > 1) {
-    for (var i = 1; i < arr.length; i++) {
-      emptyArr.push(arr[i]);
-    }
-    return emptyArr;
-  } else {
-    return [];
+
+  for (var i = 1; i < arr.length; i++) {
+    emptyArr.push(arr[i]);
   }
+  return emptyArr;
 }
