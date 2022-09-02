@@ -35,18 +35,9 @@ function titleCase(title) {
   var words = title.toLowerCase().split(' ');
 
   var capitalize, tempStr, colonFound, dashFound;
-  var afterColonCount = 0;
 
   for (var i = 0; i < words.length; i++) {
     capitalize = true;
-
-    if (colonFound === true) {
-      afterColonCount++;
-    } else {
-      afterColonCount = 0;
-    }
-
-    colonFound = false;
     dashFound = false;
 
     for (var j = 0; j < keywords.length; j++) {
@@ -55,8 +46,13 @@ function titleCase(title) {
         break;
       }
     }
-    if (capitalize === true || i === 0 || afterColonCount) {
+    if (capitalize || i === 0 || colonFound) {
+      if (colonFound) {
+        colonFound = false;
+      }
+
       tempStr = words[i][0].toUpperCase();
+
       if (words[i].length > 1) {
         for (var k = 1; k < words[i].length; k++) {
           if (dashFound === true) {
