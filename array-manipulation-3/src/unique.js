@@ -18,6 +18,7 @@ function unique(array) {
       for (var j = 0; j < output.length; j++) {
         if (array[i] === output[j]) {
           addItem = false;
+          break;
         }
       }
 

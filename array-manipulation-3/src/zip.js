@@ -9,25 +9,9 @@
 
 function zip(arr1, arr2) {
   var output = [];
+  var smallerLength = Math.min(arr1.length, arr2.length);
 
-  if (arr1.length !== arr2.length) {
-    var smallerLength = Math.min(arr1.length, arr2.length);
-    if (arr1.length !== smallerLength) {
-      arr1 = shaveArray(arr1, smallerLength);
-    } else {
-      arr2 = shaveArray(arr2, smallerLength);
-    }
-  }
-
-  function shaveArray(array, length) {
-    var output = [];
-    for (var i = 0; i < length; i++) {
-      output.push(array[i]);
-    }
-    return output;
-  }
-
-  for (var i = 0; i < arr1.length; i++) {
+  for (var i = 0; i < smallerLength; i++) {
     output.push([arr1[i], arr2[i]]);
   }
 
