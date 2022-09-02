@@ -9,20 +9,16 @@
 // return count at end
 
 function numVowels(str) {
-  if (str.length) {
-    var vow = ['a', 'e', 'i', 'o', 'u'];
-    str = str.toLowerCase();
-    var count = 0;
-    for (var i = 0; i < str.length; i++) {
-      for (var j = 0; j < vow.length; j++) {
-        if (str[i] === vow[j]) {
-          count++;
-          break;
-        }
+  var vow = ['a', 'e', 'i', 'o', 'u'];
+  str = str.toLowerCase();
+  var count = 0;
+  for (var i = 0; i < str.length; i++) {
+    for (var j = 0; j < vow.length; j++) {
+      if (str[i] === vow[j]) {
+        count++;
+        break;
       }
     }
-    return count;
-  } else {
-    return 0;
   }
+  return count;
 }

@@ -9,24 +9,20 @@
 // return the string at the end
 
 function capitalizeWords(string) {
-  if (string.length) {
-    var output = string[0].toUpperCase();
-    var bool = false;
-    for (var i = 1; i < string.length; i++) {
-      if (bool === true) {
-        output += string[i].toUpperCase();
-        bool = false;
+  var output = string[0].toUpperCase();
+  var isLastCharSpace = false;
+  for (var i = 1; i < string.length; i++) {
+    if (isLastCharSpace === true) {
+      output += string[i].toUpperCase();
+      isLastCharSpace = false;
+    } else {
+      if (string[i] === ' ') {
+        isLastCharSpace = true;
+        output += string[i];
       } else {
-        if (string[i] === ' ') {
-          bool = true;
-          output += string[i];
-        } else {
-          output += string[i].toLowerCase();
-        }
+        output += string[i].toLowerCase();
       }
     }
-    return output;
-  } else {
-    return '';
   }
+  return output;
 }

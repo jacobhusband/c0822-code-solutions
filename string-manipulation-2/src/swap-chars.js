@@ -9,15 +9,15 @@
 // return the string
 
 function swapChars(i1, i2, str) {
-  var olStr = '';
+  var output = '';
   for (var i = 0; i < str.length; i++) {
     if (i === i1) {
-      olStr += str[i2];
+      output += str[i2];
     } else if (i === i2) {
-      olStr += str[i1];
+      output += str[i1];
     } else {
-      olStr += str[i];
+      output += str[i];
     }
   }
-  return olStr;
+  return output;
 }

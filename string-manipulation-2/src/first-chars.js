@@ -9,16 +9,12 @@
 // return old empty string
 
 function firstChars(len, str) {
-  if (str.length) {
-    var output = '';
-    if (str.length < len) {
-      len = str.length;
-    }
-    for (var i = 0; i < len; i++) {
-      output += str[i];
-    }
-    return output;
-  } else {
-    return '';
+  var output = '';
+  if (str.length < len) {
+    len = str.length;
   }
+  for (var i = 0; i < len; i++) {
+    output += str[i];
+  }
+  return output;
 }

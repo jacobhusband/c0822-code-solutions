@@ -9,12 +9,12 @@
 // if the word javascript is found make it the correct capitalization
 
 function capitalizeWord(str) {
-  var empStr = str[0].toUpperCase();
+  var output = str[0].toUpperCase();
   for (var i = 1; i < str.length; i++) {
-    empStr += str[i].toLowerCase();
+    output += str[i].toLowerCase();
   }
-  if (empStr === 'Javascript') {
-    empStr = 'JavaScript';
+  if (output === 'Javascript') {
+    output = 'JavaScript';
   }
-  return empStr;
+  return output;
 }

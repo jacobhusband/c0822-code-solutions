@@ -7,13 +7,13 @@
 // concat letters to empty str and return it
 
 function ransomCase(str) {
-  var empStr = str[0].toLowerCase();
+  var output = str[0].toLowerCase();
   for (var i = 1; i < str.length; i++) {
     if (i % 2 === 1) {
-      empStr += str[i].toUpperCase();
+      output += str[i].toUpperCase();
     } else {
-      empStr += str[i].toLowerCase();
+      output += str[i].toLowerCase();
     }
   }
-  return empStr;
+  return output;
 }

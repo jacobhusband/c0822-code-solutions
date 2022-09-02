@@ -8,13 +8,13 @@
 // at the end for both cases concat '...' and return
 
 function truncate(length, string) {
-  var emptyStr = '';
+  var output = '';
   if (string.length < length) {
     length = string.length;
   }
   for (var i = 0; i < length; i++) {
-    emptyStr += string[i];
+    output += string[i];
   }
-  emptyStr += '...';
-  return emptyStr;
+  output += '...';
+  return output;
 }
