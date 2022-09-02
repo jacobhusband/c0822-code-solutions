@@ -7,18 +7,17 @@
 
 function chunk(arr, size) {
   var output = [];
-  var temp = [arr[0]];
-  var i = 1;
+  var temp = [];
 
-  for (; i < arr.length; i++) {
-    if (i % size === 0) {
+  for (var i = 0; i < arr.length; i++) {
+    if (i % size === 0 && i !== 0) {
       output.push(temp);
       temp = [];
     }
     temp.push(arr[i]);
-    if (i === arr.length - 1) {
-      output.push(temp);
-    }
+  }
+  if (temp.length) {
+    output.push(temp);
   }
   return output;
 }

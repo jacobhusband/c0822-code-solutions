@@ -8,8 +8,7 @@
 function dropRight(arr, count) {
   if (arr.length > count) {
     var output = [];
-    var i = 0;
-    for (; i < arr.length - count; i++) {
+    for (var i = 0; i < arr.length - count; i++) {
       output.push(arr[i]);
     }
     return output;
