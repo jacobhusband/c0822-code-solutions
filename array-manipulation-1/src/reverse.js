@@ -6,13 +6,9 @@
 // return old empty array as output
 
 function reverse(arr) {
-  if (arr.length) {
-    var emptyArr = [];
-    for (var i = arr.length - 1; i >= 0; i--) {
-      emptyArr.push(arr[i]);
-    }
-    return emptyArr;
-  } else {
-    return [];
+  var emptyArr = [];
+  for (var i = arr.length - 1; i >= 0; i--) {
+    emptyArr.push(arr[i]);
   }
+  return emptyArr;
 }

@@ -7,12 +7,9 @@
 
 function initial(arr) {
   var emptyArr = [];
-  if (arr.length > 1) {
-    for (var i = 0; i < arr.length - 1; i++) {
-      emptyArr.push(arr[i]);
-    }
-    return emptyArr;
-  } else {
-    return [];
+
+  for (var i = 0; i < arr.length - 1; i++) {
+    emptyArr.push(arr[i]);
   }
+  return emptyArr;
 }
