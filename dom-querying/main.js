@@ -1,0 +1,15 @@
+console.log('Hello World');
+var h1 = document.querySelector('h1');
+console.log('document.querySelector(\'h1\')', h1);
+console.log('console.dir(h1): ');
+console.dir(h1);
+var explanation = document.querySelector('#explanation');
+console.log('console.dir(explanation)');
+console.dir(explanation);
+var hint = document.querySelector('.hint');
+console.log('console.dir(hint)');
+console.dir(hint);
+var pNodeList = document.querySelectorAll('p');
+console.log('p NodeList: ', pNodeList);
+var exampleLinkNodeList = document.querySelectorAll('.example-link');
+console.log('exampleLinkNodeList: ', exampleLinkNodeList);
