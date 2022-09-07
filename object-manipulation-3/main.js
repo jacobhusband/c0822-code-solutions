@@ -54,6 +54,7 @@ for (var ind = 0; ind < 8; ind++) {
 
 // Find highest score player
 var maxIndex;
+var highestScoringPlayers = [];
 
 for (var t = 0; t < playerArray.length; t++) {
   playerArray[t].score = 0;
@@ -89,4 +90,11 @@ console.log(
   playerArray[3]
 );
 
-console.log('Winning player: ', playerArray[maxIndex]);
+// Tie game check
+for (var inc = 0; inc < playerArray.length; inc++) {
+  if (playerArray[inc].score === playerArray[maxIndex].score) {
+    highestScoringPlayers.push(playerArray[inc]);
+  }
+}
+
+console.log('Winning players: ', highestScoringPlayers);
