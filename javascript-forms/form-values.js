@@ -1,9 +1,9 @@
-var formObj = {};
 var $form = document.querySelector('form');
 
 $form.addEventListener('submit', submission);
 
 function submission(event) {
+  var formObj = {};
   event.preventDefault();
   formObj.name = $form.elements.name.value;
   formObj.email = $form.elements.email.value;
