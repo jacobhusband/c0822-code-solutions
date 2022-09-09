@@ -1,3 +1,5 @@
+// javascript-typing-tutor
+
 var str = 'grumpy wizards make toxic brew';
 var $container = document.querySelector('.container');
 var $h1 = createSentence(str[0], str.substring(1));
