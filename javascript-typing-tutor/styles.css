@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+h1 {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.green {
+  color: lime;
+  white-space: pre;
+}
+
+.red {
+  color: red;
+}
+
+.red-background {
+  background-color: red;
+}
+
+.underline {
+  border-bottom: 3px solid black;
+}
