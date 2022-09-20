@@ -17,35 +17,63 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="container flex-column">
+    <div class="container flex-column column-center-lr">
       <div class="title-text-container">
         <h1>Choose Your Starter</h1>
         <h1>Pokémon</h1>
       </div>
-      <div class="carousel-container row row-center-ud space-between">
-        <div class="flex-column column-center-lr column-center-ud">
-          <div class="image-container chevron chevron-left">
-            <img src="images/next.png" alt="chevron" />
+      <div class="carousel-container row space-between">
+        <div
+          class="flex-column column-center-lr column-center-ud chevron-container chevron-left"
+        >
+          <div class="image-container chevron flip-180">
+            <img
+              class="chevron-image chevron-left"
+              src="images/next.png"
+              alt="chevron"
+            />
           </div>
         </div>
         <div class="flex-column column-center-lr column-center-ud">
           <div class="button-container row">
-            <button>SELECT</button>
+            <button class="select-button">SELECT</button>
           </div>
           <div class="image-container row">
-            <img src="images/001.png" alt="Bulbasaur" />
+            <img src="images/001.png" alt="Bulbasaur" class="pokemon-image" />
+            <img
+              src="images/004.png"
+              alt="Charmander"
+              class="pokemon-image hidden"
+            />
+            <img
+              src="images/007.png"
+              alt="Squirtle"
+              class="pokemon-image hidden"
+            />
+            <img
+              src="images/025.png"
+              alt="Pikachu"
+              class="pokemon-image hidden"
+            />
+            <img
+              src="images/039.png"
+              alt="Wiggly Puff"
+              class="pokemon-image hidden"
+            />
           </div>
           <div class="dots-container row">
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
+            <div data-id="1" class="dot dark-bg"></div>
+            <div data-id="2" class="dot"></div>
+            <div data-id="3" class="dot"></div>
+            <div data-id="4" class="dot"></div>
+            <div data-id="5" class="dot"></div>
           </div>
         </div>
-        <div class="flex-column column-center-lr column-center-ud">
+        <div
+          class="flex-column column-center-lr column-center-ud chevron-container"
+        >
           <div class="image-container row chevron chevron-right">
-            <img src="images/next.png" alt="chevron" />
+            <img class="chevron-image" src="images/next.png" alt="chevron" />
           </div>
         </div>
       </div>
