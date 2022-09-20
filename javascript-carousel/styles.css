@@ -59,12 +59,18 @@ button {
   margin: 2rem 0 0.5rem;
 }
 
-.button-container > button {
+.select-button {
   font-size: 2rem;
   border-radius: 0.2rem;
   color: #fdecef;
   background-color: #9d6381;
   border: 1px solid #0f110c;
+}
+
+.selected {
+  background-color: rgb(32 128 32);
+  border: 3px solid rgb(11 78 11);
+  box-shadow: 2px 2px 2px 0.2px black;
 }
 
 .image-container {

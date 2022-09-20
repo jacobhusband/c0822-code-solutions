@@ -49,9 +49,6 @@ function findCurrentImageInd() {
 }
 
 function detectCarouselClicks(event) {
-  // if (event.target.matches(".select-button")) {
-  //   keepImageStillBySelectButton(event);
-  // }
   if (
     event.target.matches('.chevron-container') ||
     event.target.matches('.chevron-image')
@@ -61,13 +58,16 @@ function detectCarouselClicks(event) {
   if (event.target.matches('.dot')) {
     changeImageByDotClick(event);
   }
-  resetInterval();
+  if (event.target.matches('.select-button')) {
+    keepImageStillBySelectButton(event);
+  }
 }
 
 function changeImageByDotClick(event) {
   var i = findCurrentImageInd();
   hideImage(i);
   showImage(event.target.dataset.id - 1);
+  resetInterval();
 }
 
 function changeImageByChevronClick(event) {
@@ -75,6 +75,19 @@ function changeImageByChevronClick(event) {
     changeImageByDirection('left');
   } else {
     changeImageByDirection('right');
+  }
+  resetInterval();
+}
+
+function keepImageStillBySelectButton(event) {
+  if (!event.target.matches('.selected')) {
+    event.target.classList.add('selected');
+    event.target.textContent = 'SELECTED';
+    clearInterval(id);
+  } else {
+    event.target.classList.remove('selected');
+    event.target.textContent = 'SELECT';
+    resetInterval();
   }
 }
 
