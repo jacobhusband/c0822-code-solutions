@@ -23,7 +23,6 @@ Bank.prototype.getAccount = function (number) {
   this.accounts.forEach(acc => {
     if (acc.number === number) {
       account = acc;
-
     }
   });
   return account;
