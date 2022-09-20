@@ -1,4 +1,5 @@
 var id = null;
+var i = 0;
 
 var $carouselContainer = document.querySelector('.carousel-container');
 var $carouselDots = $carouselContainer.querySelectorAll('.dot');
@@ -9,9 +10,7 @@ $carouselContainer.addEventListener('click', detectCarouselClicks);
 id = setInterval(changeImageByDirection, 3000, 'right');
 
 function changeImageByDirection(direction) {
-  var i = findCurrentImageInd();
-
-  hideImage(i);
+  hideImage();
 
   if (direction === 'right') {
     if (i === 4) {
@@ -30,7 +29,7 @@ function changeImageByDirection(direction) {
   showImage(i);
 }
 
-function hideImage(i) {
+function hideImage() {
   $carouselDots[i].classList.remove('dark-bg');
   $carouselImages[i].classList.add('hidden');
 }
@@ -38,14 +37,6 @@ function hideImage(i) {
 function showImage(i) {
   $carouselDots[i].classList.add('dark-bg');
   $carouselImages[i].classList.remove('hidden');
-}
-
-function findCurrentImageInd() {
-  for (var i = 0; i < $carouselDots.length; i++) {
-    if ($carouselDots[i].matches('.dark-bg')) {
-      return i;
-    }
-  }
 }
 
 function detectCarouselClicks(event) {
@@ -64,9 +55,9 @@ function detectCarouselClicks(event) {
 }
 
 function changeImageByDotClick(event) {
-  var i = findCurrentImageInd();
-  hideImage(i);
-  showImage(event.target.dataset.id - 1);
+  hideImage();
+  i = event.target.dataset.id - 1;
+  showImage(i);
   resetInterval();
 }
 
