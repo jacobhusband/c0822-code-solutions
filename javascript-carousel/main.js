@@ -83,8 +83,10 @@ function keepImageStillBySelectButton(event) {
   if (!event.target.matches('.selected')) {
     event.target.classList.add('selected');
     event.target.textContent = 'SELECTED';
+    $carouselContainer.style.border = '3px solid rgb(11 78 11)';
     clearInterval(id);
   } else {
+    $carouselContainer.style.border = 'none';
     event.target.classList.remove('selected');
     event.target.textContent = 'SELECT';
     resetInterval();
