@@ -11,7 +11,11 @@ id = setInterval(changeImageByDirection, 3000, 'right');
 
 function changeImageByDirection(direction) {
   hideImage();
+  changeIndex(direction);
+  showImage();
+}
 
+function changeIndex(direction) {
   if (direction === 'right') {
     if (i === 4) {
       i = 0;
@@ -25,8 +29,6 @@ function changeImageByDirection(direction) {
       i--;
     }
   }
-
-  showImage(i);
 }
 
 function hideImage() {
@@ -34,7 +36,7 @@ function hideImage() {
   $carouselImages[i].classList.add('hidden');
 }
 
-function showImage(i) {
+function showImage() {
   $carouselDots[i].classList.add('dark-bg');
   $carouselImages[i].classList.remove('hidden');
 }
@@ -57,7 +59,7 @@ function detectCarouselClicks(event) {
 function changeImageByDotClick(event) {
   hideImage();
   i = event.target.dataset.id - 1;
-  showImage(i);
+  showImage();
   resetInterval();
 }
 
