@@ -1,0 +1,500 @@
+   21  git add javascript-light-bulb/
+   22  git commit -m "Completed javascript-light-bulb challenge"
+   23  git push origin javascript-light-bulb 
+   24  git add javascript-light-bulb/
+   25  git commit -m "Remove logic that is dependent on current state of DOM"
+   26  git push origin javascript-light-bulb 
+   27  git switch main
+   28  git pull origin main
+   29  git branch javascript-forms
+   30  git switch javascript-forms 
+   31  git add javascript-forms/
+   32  git commit -m "Completed javascript-forms exercises"
+   33  git push origin javascript-forms
+   34  git add javascript-forms/
+   35  git commit -m "Move form object into event handler function to keep sensitive data out of global scope"
+   36  git push origin javascript-forms 
+   37  git switch main
+   38  git pull origin main
+   39  clear
+   40  git branch dom-creation
+   41  git switch dom-creation 
+   42  git add dom-creation/
+   43  git commit -m "Completed dom-creation exercises"
+   44  git push origin dom-creation 
+   45  git switch main
+   46  git switch object-manipulation-3
+   47  git add object-manipulation-3/
+   48  git commit -m "Change complex card creation and change block of code to loop"
+   49  git push origin object-manipulation-3
+   50  git add object-manipulation-3/
+   51  git commit -m "Add condition to show all winning players in case of a tie"
+   52  git push origin object-manipulation-3
+   53  git switch main
+   54  git pull origin main
+   55  clear
+   56  git pull origin main
+   57  clear
+   58  git branch css-media-queries
+   59  git switch css-media-queries 
+   60  git add css-media-queries/
+   61  git commit -m "Completed css-media-queries exercises"
+   62  git push origin main
+   63  git push origin css-media-queries
+   64  git switch main
+   65  git pull origin main
+   66  clear
+   67  git branch javascript-modal
+   68  git switch javascript-modal 
+   69  git add javascript-modal/
+   70  git commit -m "Completed javascript-modal challenge"
+   71  git add javascript-modal/
+   72  git commit -m "Completed javascript-modal challenge"
+   73  git push origin javascript-modal 
+   74  git switch main
+   75  git pull origin main
+   76  git pull origin main
+   77  clear
+   78  git pull origin main
+   79  git branch dom-event-delegation
+   80  git switch dom-event-delegation 
+   81  git add dom-event-delegation/
+   82  git commit -m "Completed dom-event-delegation exercises"
+   83  git add dom-event-delegation/
+   84  git commit -m "Completed dom-event-delegation exercises"
+   85  git add dom-event-delegation/
+   86  git commit -m "Completed dom-event-delegation exerciseS"
+   87  git push origin dom-event-delegation 
+   88  git switch main
+   89  git pull origin main
+   90  clear
+   91  git branch javascript-view-swapping
+   92  git switch javascript-view-swapping 
+   93  git add javascript-view-swapping/
+   94  git commit -m "Completed javascript-view-swapping exercises"
+   95  git add javascript-view-swapping/
+   96  git commit -m "Completed javascript-view-swapping exerciseS"
+   97  git push origin javascript-view-swapping 
+   98  git switch main
+   99  git pull origin main
+  100  clear
+  101  git branch css-responsive-layout
+  102  git switch css-responsive-layout 
+  103  git add css-responsive-layout/
+  104  git commit -m "Completed css-responsive-layout exercises"
+  105  git push origin css-responsive-layout 
+  106  git switch main
+  107  git pull origin main
+  108  clear
+  109  git branch javascript-typing-tutor
+  110  git switch javascript-typing-tutor 
+  111  git add javascript-typing-tutor/
+  112  git commit -m "Completed javascript-typing-tutor exercises"
+  113  git add javascript-typing-tutor/
+  114  git commit -m "Completed javascript-typing-tutor exercises"
+  115  git push origin javascript-typing-tutor 
+  116  git switch main
+  117  clear
+  118  git switch javascript-typing-tutor 
+  119  git switch main
+  120  git add javascript-typing-tutor/
+  121  git commit -m "Stash changes"
+  122  --allow-empty
+  123  git commit -m "Stash changes" --allow-empty
+  124  git push origin javascript-typing-tutor 
+  125  git switch main
+  126  git add javascript-typing-tutor/
+  127  git commit -m "Stash changes"
+  128  git push origin javascript-typing-tutor 
+  129  git switch main
+  130  git branch javascript-and-json
+  131  git switch javascript-and-json 
+  132  git add javascript-and-json/
+  133  git commit -m "Completed javascript-and-json exercises"
+  134  git push origin javascript-and-json 
+  135  git switch main
+  136  git pull orgin main
+  137  git branch javascript-local-storage
+  138  git switch javascript-local-storage 
+  139  git add javascript-local-storage/
+  140  git commit -m "Completed javascript-local-storage exercises"
+  141  git push origin javascript-local-storage 
+  142  git switch main
+  143  clear
+  144  git pull origin main
+  145  git pull origin main
+  146  clear
+  147  git branch javascript-custom-methods
+  148  git switch javascript-custom-methods 
+  149  git status
+  150  git add javascript-custom-methods/
+  151  git commit -m "Completed javascript-custom-methods exercises"
+  152  git push origin javascript-custom-methods 
+  153  git add javascript-custom-methods/
+  154  git commit -m "Completed javascript-custom-methods exercises"
+  155  git push origin javascript-custom-methods 
+  156  git switch main
+  157  git pull origin main
+  158  git branch javascript-this
+  159  git switch javascript-this 
+  160  git status
+  161  git add javascript-this/
+  162  git commit -m "Completed javascript-this exercises"
+  163  git add javascript-this/
+  164  git commit -m "Completed javascript-this exercises"
+  165  git push origin javascript-this 
+  166  git switch main
+  167  git pull origin main
+  168  git branch javascript-prototypes
+  169  git switch javascript-prototypes
+  170  git add javascript-prototypes/
+  171  git commit -m "Completed javascript-prototypes exercises"
+  172  git push origin javascript-prototypes 
+  173  git switch main
+  174  git pull origin main
+  175  git branch javascript-prototypes
+  176  git branch javascript-constructors
+  177  git switch javascript-constructors 
+  178  git add javascript-constructors/
+  179  git commit -m "Completed javascript-constructors exercises"
+  180  git add javascript-constructors/
+  181  git commit -m "Completed javascript-constructors exercises"
+  182  git push origin javascript-constructors
+  183  git switch main
+  184  git pull origin main
+  185  git branch javascript-bank
+  186  git switch javascript-bank
+  187  git add javascript-bank/
+  188  git commit -m "Completed javascript-bank exercises"
+  189  git add javascript-bank/
+  190  git commit -m "Completed javascript-bank exercises"
+  191  git push origin javascript-bank 
+  192  git switch main
+  193  git add .
+  194  git commit -m "Modified file"
+  195  git push origin javascript-bank 
+  196  git switch main
+  197  git add javascript-timers/
+  198  git commit -m "Completed javascript-timers exercises"
+  199  git push origin javascript-timers/
+  200  git branch javascript-timers
+  201  git switch javascript-timers 
+  202  git add .
+  203  git commit -m "Completed javascript-timers exercises"
+  204  git push origin javascript-timers/
+  205  git switch main
+  206  git add .
+  207  git commit -m "Remove timers"
+  208  git push origin main
+  209  git add .
+  210  git commit -m "Remove timers"
+  211  git push origin main
+  212  git switch javascript-timers 
+  213  git reset HEAD --
+  214  git add javascript-timers/
+  215  git commit -m "Completed javascript-timers exercises"
+  216  git push origin javascript-timers
+  217  git switch main
+  218  git switch javascript-timers 
+  219  git status
+  220  git status
+  221  git add javascript-timers/
+  222  git commit -m "Completed javascript-timers exercises"
+  223  git push origin javascript-timers
+  224  git add javascript-timers/
+  225  git commit -m "Completed javascript-timers exercises"
+  226  git push origin javascript-timers
+  227  git switch main
+  228  git pull origin main
+  229  git push origin --delete javascript-timers
+  230  git branch
+  231  git branch javascript-timers
+  232  git branch -d javascript-timers
+  233  git branch -D javascript-timers
+  234  git branch javascript-timers
+  235  git switch javascript-timers
+  236  git add .
+  237  git commit -m "Completed javascript-timers exerciseS"
+  238  git push origin javascript-timers
+  239  git switch main
+  240  git pull origin main
+  241  git branch javascript-carousel
+  242  git switch javascript-carousel
+  243  git add javascript-carousel/
+  244  git commit -m "Add basic design of webpage"
+  245  git push origin javascript-carousel 
+  246  git add javascript-carousel/
+  247  git commit -m "Complete javascript-carousel challenge"
+  248  git add javascript-carousel/
+  249  git commit -m "Complete javascript-carousel challenge"
+  250  git add javascript-carousel/
+  251  git commit -m "Complete javascript-carousel challenge"
+  252  git push origin javascript-carousel 
+  253  git add javascript-carousel/
+  254  git commit -m "Add select feature"
+  255  git add javascript-carousel/
+  256  git commit -m "Add select feature"
+  257  git push origin javascript-carousel 
+  258  git add javascript-carousel/
+  259  git commit -m "Add border around carousel upon select"
+  260  git push origin javascript-carousel 
+  261  git add javascript-carousel/
+  262  git commit -m "Move index of carousel images to global variable instead of searching DOM"
+  263  git push origin javascript-carousel 
+  264  git switch main
+  265  git switch javascript-carousel 
+  266  git switch main
+  267  git branch practice-interview-problem-1
+  268  git switch practice-interview-problem-1 
+  269  git add .
+  270  git commit -m "Completed practice-interview-problem-1
+  271  "
+  272  git commit -m "Completed practice-interview-problem-1
+  273  " --no-verify
+  274  git push origin practice-interview-problem-1 
+  275  git add .
+  276  git commit -m "Test function"
+  277  git commit -m "Test function" --no-verify
+  278  git push origin practice-interview-problem-1 
+  279  git switch main
+  280  git pull origin main
+  281  git branch issue-1-see-car
+  282  git branch codesignal
+  283  git switch codesignal
+  284  git add .
+  285  git commit -m "Work on File naming"
+  286  git commit -m "Work on File naming" --no-verify
+  287  git push origin codesignal 
+  288  git switch main
+  289  git add .
+  290  git commit -m "codesignal"
+  291  git commit -m "codesignal" --no-verify
+  292  git push origin codesignal
+  293  git switch main
+  294  git branch http-messages
+  295  git switch http-messages 
+  296  http http://www.example.com
+  297  http http://www.example.com --verbose
+  298  http --body GET https://jsonplaceholder.typicode.com/users > http-messages/users.json
+  299  http --body GET https://example.com > http-messages/index.html
+  300  git add http-messages/
+  301  git commit -m "Completed http-messages exercises"
+  302  git push origin http-messages 
+  303  git switch main
+  304  git pull origin main
+  305  git branch javascript-ajax
+  306  git switch javascript-ajax 
+  307  git add javascript-ajax/
+  308  git commit -m "Completed javascript-ajax exercises"
+  309  git push origin javascript-ajax 
+  310  git switch main
+  311  clear
+  312  http --verbose https://api.pexels.com/v1/
+  313  http --verbose https://api.pexels.com/v1/ Authorization==563492ad6f9170000100000176df960a7f484fecb9b67bab74b52b8c
+  314  http --verbose https://api.pexels.com/v1/search q==Nature Authorization==563492ad6f9170000100000176df960a7f484fecb9b67bab74b52b8c
+  315  git switch codes
+  316  git branch pexels-api
+  317  git switch pexels-api 
+  318  http --verbose https://api.pexels.com/v1/search query==people Authorization:=563492ad6f9170000100000176df960a7f484fecb9b67bab74b52b8c
+  319  http --verbose https://api.pexels.com/v1/search query==people Authorization:=563492ad6f9170000100000176df960a7f484fecb9b67bab74b52b8c --json
+  320  http --verbose https://api.pexels.com/v1/search query==people
+  321  http --verbose https://api.pexels.com/v1/search query==people Authorization:="563492ad6f9170000100000176df960a7f484fecb9b67bab74b52b8c"
+  322  http --verbose https://api.pexels.com/v1/search query==people Authorization==563492ad6f9170000100000176df960a7f484fecb9b67bab74b52b8c
+  323  http --verbose https://api.pexels.com/v1/search query==people Authorization=="563492ad6f9170000100000176df960a7f484fecb9b67bab74b52b8c"
+  324  http --verbose https://api.pexels.com/v1/search query==people Authorization="563492ad6f9170000100000176df960a7f484fecb9b67bab74b52b8c"
+  325  http --verbose https://api.pexels.com/v1/search query==people Authorization:"563492ad6f9170000100000176df960a7f484fecb9b67bab74b52b8c"
+  326  http --verbose api.iconfinder.com
+  327  http --verbose api.iconfinder.com/v4/iconsets/
+  328  http --verbose api.iconfinder.com/v4/iconsets/ Authorization:
+  329  http --verbose https://api.iconfinder.com/v4/icons/search
+  330  http --verbose https://api.iconfinder.com/v4/icons/search query==meow Authorization:"garwzy5TOYdlFNT093Y3Hu01vCK1HsuKzneAS9qBrX64CFSMrr6lS58sVLNJYNML"
+  331  http --verbose https://api.iconfinder.com/v4/icons/search query==meow Authorization:garwzy5TOYdlFNT093Y3Hu01vCK1HsuKzneAS9qBrX64CFSMrr6lS58sVLNJYNML
+  332  http --verbose https://api.iconfinder.com/v4/icons/search query==meow Authorization=garwzy5TOYdlFNT093Y3Hu01vCK1HsuKzneAS9qBrX64CFSMrr6lS58sVLNJYNML
+  333  http --verbose https://api.iconfinder.com/v4/icons/search/ query==meow Authorization:"garwzy5TOYdlFNT093Y3Hu01vCK1HsuKzneAS9qBrX64CFSMrr6lS58sVLNJYNML"
+  334  http --verbose https://api.iconfinder.com/v4/icons/search/ query==meow Authorization:"Bearer garwzy5TOYdlFNT093Y3Hu01vCK1HsuKzneAS9qBrX64CFSMrr6lS58sVLNJYNML"
+  335  http --verbose https://api.iconfinder.com/v4/icons/search/ query==meow Authorization: Bearer "garwzy5TOYdlFNT093Y3Hu01vCK1HsuKzneAS9qBrX64CFSMrr6lS58sVLNJYNML"
+  336  http --verbose https://api.iconfinder.com/v4/icons/search/ query==meow Authorization:"garwzy5TOYdlFNT093Y3Hu01vCK1HsuKzneAS9qBrX64CFSMrr6lS58sVLNJYNML"
+  337  http --verbose https://api.iconfinder.com/v4/icons/search/ query==meow Authorization:garwzy5TOYdlFNT093Y3Hu01vCK1HsuKzneAS9qBrX64CFSMrr6lS58sVLNJYNML
+  338  http --verbose https://api.iconfinder.com/v4/icons/search/ query==meow Authorization:"garwzy5TOYdlFNT093Y3Hu01vCK1HsuKzneAS9qBrX64CFSMrr6lS58sVLNJYNML" accept:'application/json'
+  339  http --verbose https://api.iconfinder.com/v4/icons/search/ query==meow Authorization:"Bearer garwzy5TOYdlFNT093Y3Hu01vCK1HsuKzneAS9qBrX64CFSMrr6lS58sVLNJYNML" accept:'application/json'
+  340  http --verbose https://api.iconfinder.com/v4/icons/search/ query==meow count==10
+  341  http --verbose https://api.iconfinder.com/v4/icons/search/ query==meow count==10 Authorization:"garwzy5TOYdlFNT093Y3Hu01vCK1HsuKzneAS9qBrX64CFSMrr6lS58sVLNJYNML"
+  342  http --verbose https://api.iconfinder.com/v4/icons/search/ query==meow count==10 Authorization: Bearer garwzy5TOYdlFNT093Y3Hu01vCK1HsuKzneAS9qBrX64CFSMrr6lS58sVLNJYNML
+  343  http --verbose https://api.iconfinder.com/v4/icons/search/ query==meow count==10 Authorization:garwzy5TOYdlFNT093Y3Hu01vCK1HsuKzneAS9qBrX64CFSMrr6lS58sVLNJYNML Bearer
+  344  http --verbose https://api.iconfinder.com/v4/icons/search/ query==meow count==10 Authorization:garwzy5TOYdlFNT093Y3Hu01vCK1HsuKzneAS9qBrX64CFSMrr6lS58sVLNJYNML
+  345  http --verbose https://api.iconfinder.com/v4/icons/search/ query==meow count==10 Authorization:VmP61RnlZkoaXo122obL9NE49DtHC4OgB6ePFi3hxzkf5hVNr3eGvzHJbisbZtZj
+  346  http --verbose https://api.iconfinder.com/v4/icons/search/ query==meow count==10 Authorization:garwzy5TOYdlFNT093Y3Hu01vCK1HsuKzneAS9qBrX64CFSMrr6lS58sVLNJYNML
+  347  garwzy5TOYdlFNT093Y3Hu01vCK1HsuKzneAS9qBrX64CFSMrr6lS58sVLNJYNML
+  348  http --verbose https://api.iconfinder.com/v4/icons/search/ query==meow count==10 'Authorization':'Bearer garwzy5TOYdlFNT093Y3Hu01vCK1HsuKzneAS9qBrX64CFSMrr6lS58sVLNJYNML"
+  349  clear
+  350  quit
+  351  'accept':'application/json'
+  352  http --verbose https://api.iconfinder.com/v4/icons/search/ query==meow count==10 'Authorization':'Bearer garwzy5TOYdlFNT093Y3Hu01vCK1HsuKzneAS9qBrX64CFSMrr6lS58sVLNJYNML"
+  353  http --verbose https://api.iconfinder.com/v4/icons/search/ query==meow count==10 'Authorization':'Bearer garwzy5TOYdlFNT093Y3Hu01vCK1HsuKzneAS9qBrX64CFSMrr6lS58sVLNJYNML" 'accept':'application/json'
+  354  http --verbose https://api.iconfinder.com/v4/icons/search/ query==meow count==10 'Authorization':'Bearer garwzy5TOYdlFNT093Y3Hu01vCK1HsuKzneAS9qBrX64CFSMrr6lS58sVLNJYNML'
+  355  http --verbose https://api.iconfinder.com query==meow count==10 'Authorization':'Bearer garwzy5TOYdlFNT093Y3Hu01vCK1HsuKzneAS9qBrX64CFSMrr6lS58sVLNJYNML'
+  356  http --verbose https://api.iconfinder.com/v4/icons/search/ query==meow count==10 'Accept':'application/json' 'Authorization':'Bearer garwzy5TOYdlFNT093Y3Hu01vCK1HsuKzneAS9qBrX64CFSMrr6lS58sVLNJYNML' 'Host':'api.iconfinder.com'
+  357  http --verbose https://api.kanye.rest
+  358  http https://api.goprogram.ai/inspiration
+  359  git add .
+  360  git commit -m "Testing"
+  361  git push origin pexels-api 
+  362  git switch main
+  363  git pull origin main
+  364  git switch pexels-api 
+  365  git switch main
+  366  git switch pexels-api 
+  367  git add .
+  368  git commit -m "Testing"
+  369  git commit -m "Testing" --no-verify
+  370  git switch javascript-carousel 
+  371  git switch pexel-api
+  372  git switch main
+  373  git add .
+  374  git commit -m "Remove i"
+  375  git push origin javascript-carousel 
+  376  git switch main
+  377  git switch pexel-api
+  378  git branch
+  379  git branch pexels-api
+  380  git switch pexels-api 
+  381  git branch -d pexels-api
+  382  git add .
+  383  git commit -m "Trash"
+  384  git push origin pexels-api 
+  385  git switch main
+  386  git branch -d pexels-api
+  387  git branch -D pexels-api
+  388  git push origin --delete pexels-api
+  389  http https://wger.de/api/v2/workout/
+  390  http https://wger.de/api/v2/workout/ Authorization: "Token 06533782073ec64f0c174e13f52373d8f19c0ae5"
+  391  http https://wger.de/api/v2/workout/ Authorization:"06533782073ec64f0c174e13f52373d8f19c0ae5"
+  392  git branch
+  393  git branch workout-app
+  394  git switch workout-app 
+  395  http https://wger.de/api/v2/exerciseinfo.json/ Authorization:"Token 06533782073ec64f0c174e13f52373d8f19c0ae5"
+  396  http https://wger.de/api/v2/ingredientinfo.json/ Authorization:"Token 06533782073ec64f0c174e13f52373d8f19c0ae5"
+  397  http https://wger.de/api/v2/exerciseinfo/Shoulders/.json/ Authorization:"Token 06533782073ec64f0c174e13f52373d8f19c0ae5"
+  398  http https://wger.de/api/v2/exerciseinfo.json/ Authorization:"Token 06533782073ec64f0c174e13f52373d8f19c0ae5"
+  399  http https://wger.de/api/v2/exerciseinfo.json/ Authorization:"Token 06533782073ec64f0c174e13f52373d8f19c0ae5"
+  400  http https://imsea.herokuapp.com/api/1 q==howdy
+  401  http https://imsea.herokuapp.com/api/1 q=="back squat"
+  402  http https://imsea.herokuapp.com/api/1 q=="bloody mary""
+  403  http https://imsea.herokuapp.com/api/1 q=="barbell lunge"
+  404  http https://imsea.herokuapp.com/api/1 q=="dumbell lunge"
+  405  git switch main
+  406  git pull origin main
+  407  git branh es6-const-let
+  408  git branch es6-const-let
+  409  git switch es6-const-let 
+  410  git status
+  411  git add es6-const-let/
+  412  git commit -m "Completed es6-const-let exercises"
+  413  git push origin es6-const-let 
+  414  git switch main
+  415  git pull origin main
+  416  git status
+  417  git pull origin main
+  418  git pull origin main
+  419  git branch es6-template-literals
+  420  git switch es6-template-literals 
+  421  git status
+  422  git add .
+  423  git commit -m "Completed es6-template-literals exercises"
+  424  git puhs origin es6-template-literals/
+  425  git push origin es6-template-literals/
+  426  git push origin es6-template-literals
+  427  git switch main
+  428  git switch es6-template-literals 
+  429  git switch es6-template-literals 
+  430  git status
+  431  git add .
+  432  git commit -m "Fix applePen variable assignment not being a template literal"
+  433  git push es6-template-literals/
+  434  git push es6-template-literals
+  435  git push origin es6-template-literals 
+  436  git switch main
+  437  git switch es6-template-literals 
+  438  git switch main
+  439  git branch es6-destructuring
+  440  git switch es6-destructuring 
+  441  git status
+  442  git add .
+  443  git commit -m "es6-destructuring/
+  444  git commit -m "Completed es6-destructuring exercises"
+  445  git push origin es6-destructuring 
+  446  git switch main
+  447  git branch es6-arrow-functions
+  448  git switch es6-arrow-functions 
+  449  git add .
+  450  git commit -m "Completpleted es6-arrow-functions exercises"
+  451  git push origin es6-arrow-functions 
+  452  git status
+  453  git switch main
+  454  git branch command-line-basics
+  455  git switch command-line-basics 
+  456  cd command-line-basics
+  457  cd command-line-basics
+  458  man man
+  459  man cat
+  460  man cat
+  461  cat laziness.txt
+  462  cat impatience.txt
+  463  cat hubris.txt
+  464  man cat
+  465  cat laziness.txt impatience.txt hubris.txt
+  466  cat laziness.txt impatience.txt hubris.txt > three-virtues.txt
+  467  cat three-virtues.txt
+  468  man cat
+  469  man ls
+  470  ls -aF lfz-staff > lfz-staff/contents.txt
+  471  cat lfz-staff/contents.txt
+  472  man pwd
+  473  pwd
+  474  pwd > i-was-here.txt
+  475  ls
+  476  cat i-was-here.txt 
+  477  man echo
+  478  echo 'Hello, World!'
+  479  echo 'Hello, World!' > hello.txt
+  480  ls
+  481  cat hello.txt
+  482  man touch
+  483  touch tag-youre-it.txt
+  484  touch snoot/boop.txt
+  485  ls snoot/
+  486  man mkdir
+  487  man mkdir
+  488  mkdir parent
+  489  ls
+  490  mkdir -p parent/child
+  491  ls parent
+  492  mkdir -p parent/child/grandchild
+  493  ls parent
+  494  ls parent/child
+  495  ls parent/child/grandchild
+  496  mkdir -p parent/child/grandchild
+  497  touch parent/child/grandchild/ .gitkeep
+  498  touch parent/child/grandchild/.gitkeep
+  499  touch parent/child/grandchild/.gitkeep
+  500  man touch
+  501  touch parent/child/grandchild//.gitkeep
+  502  touch parent/child/grandchild/\.gitkeep
+  503  touch parent/child/grandchild/hi.txt
+  504  touch parent/hi.txt
+  505  ls -a parent/child/grandchild
+  506  man mv
+  507  mv pokiemans pokemon
+  508  ls
+  509  man rm
+  510  rm lol.txt
+  511  ls
+  512  rm -r kill-me/
+  513  ls
+  514  man cp
+  515  cp and-then.txt no-and-then.txt
+  516  cat and-then.txt 
+  517  cat no-and-then.txt 
+  518  man history
+  519  history
+  520  history > command-history.txt
