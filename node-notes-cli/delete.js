@@ -6,11 +6,7 @@ const remove = userKey => {
       process.exit(1);
     }
     data = JSON.parse(data);
-    for (const key in data.notes) {
-      if (userKey === key) {
-        delete data.notes[key];
-      }
-    }
+    delete data.notes[userKey];
     data = JSON.stringify(data, null, 2);
     fs.writeFile('data.json', data, 'utf8', err => {
       if (err) throw err;
