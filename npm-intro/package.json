@@ -1,0 +1,14 @@
+{
+  "name": "npm-intro",
+  "version": "1.0.0",
+  "description": "\"Learning how to use npm\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "\"Hi\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.6.1"
+  }
+}
