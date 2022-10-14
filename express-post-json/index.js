@@ -16,16 +16,12 @@ app.get('/api/grades', (req, res) => {
 });
 
 app.post('/api/grades', (req, res) => {
-  if (typeof req.body === 'object') {
-    const obj = req.body;
-    obj.id = nextId;
-    grades[nextId] = obj;
-    nextId++;
-    res.json(grades);
-    res.status(201);
-  } else {
-    res.status(404);
-  }
+  const obj = req.body;
+  obj.id = nextId;
+  grades[nextId] = obj;
+  nextId++;
+  res.status(201);
+  res.json(obj);
 });
 
 app.listen(3000, () => {
