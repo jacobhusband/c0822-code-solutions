@@ -36,7 +36,7 @@ app.delete('/api/grades/:id', (req, res, next) => {
   if (Object.keys(grades).length !== len) {
     res.sendStatus(204);
   } else {
-    res.send('Invalid id');
+    res.sendStatus(404);
   }
   next();
 });
