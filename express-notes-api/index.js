@@ -57,10 +57,12 @@ fs.readFile('data.json', 'utf8', (err, data) => {
     if (id < 1) {
       res.status(400);
       res.json({ error: 'Id cannot be a negative integer.' });
+      return;
     }
     if (!obj.notes[id]) {
       res.status(404);
       res.json({ error: 'That id does not exist.' });
+      return;
     }
     delete obj.notes[id];
     fs.writeFile('data.json', JSON.stringify(obj, null, 2), err => {
@@ -81,10 +83,12 @@ fs.readFile('data.json', 'utf8', (err, data) => {
         error:
           'Id must be a positive integer and request body must contain the content property.'
       });
+      return;
     }
     if (!obj.notes[id]) {
       res.status(404);
       res.json({ error: 'That id does not exist.' });
+      return;
     }
     obj.notes[id].content = req.body.content;
     const createdNote = obj.notes[id];
