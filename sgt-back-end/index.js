@@ -124,7 +124,7 @@ app.put("/api/grades/:gradeId", (req, res, next) => {
           error: `There was no entry associated with that id`,
         });
       } else {
-        res.status(204).json(result.rows[0]);
+        res.status(200).json(result.rows[0]);
       }
     })
     .catch((err) => {
