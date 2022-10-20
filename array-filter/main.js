@@ -21,8 +21,8 @@ const checkFilter = filter(numbers, el => !(el % 2));
 
 function filter(array, cb) {
   const output = [];
-  array.forEach(item => {
-    if (cb(item)) {
+  array.forEach((item, ind, arr) => {
+    if (cb(item, ind, arr)) {
       output.push(item);
     }
   });
