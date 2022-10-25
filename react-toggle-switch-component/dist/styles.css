@@ -1,0 +1,39 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.switch.container {
+  position: relative;
+  width: 50px;
+  height: 25px;
+  border: 1px solid rgb(49 49 49);
+  border-radius: 1rem;
+}
+
+.toggle {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: -1px;
+  left: -1px;
+  border-radius: 50%;
+  border: 1px solid rgb(49 49 49);
+  background-color: rgb(108 108 108);
+  transition: transform 0.1s ease-in-out;
+}
+
+.shifted {
+  transform: translate(25px, 0);
+}
+
+.bg-grey {
+  background-color: rgb(208 208 208);
+}
+
+.bg-green {
+  background-color: rgb(10 168 10);
+}
