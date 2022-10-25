@@ -3,50 +3,38 @@ import React from 'react';
 export default class HotButton extends React.Component {
   constructor(props) {
     super(props);
-    this.clicks = 1;
-    this.className = 'darkest-purple';
     this.state = {
-      clickCount: this.clicks,
-      className: this.className
+      clickCount: 0
     };
     this.handleClick = this.handleClick.bind(this);
   }
 
   handleClick() {
-    this.clicks++;
     this.setState({
-      clickCount: this.clicks
+      clickCount: this.state.clickCount + 1
     });
-    if (this.clicks / 4 === 1) {
-      this.setState({
-        className: 'dark-purple'
-      });
-    } else if (this.clicks / 7 === 1) {
-      this.setState({
-        className: 'purple'
-      });
-    } else if (this.clicks / 10 === 1) {
-      this.setState({
-        className: 'light-red'
-      });
-    } else if (this.clicks / 13 === 1) {
-      this.setState({
-        className: 'orange'
-      });
-    } else if (this.clicks / 16 === 1) {
-      this.setState({
-        className: 'yellow'
-      });
-    } else if (this.clicks / 19 === 1) {
-      this.setState({
-        className: 'white'
-      });
-    }
   }
 
   render() {
+    let className;
+    if (this.state.clickCount < 3) {
+      className = 'darkest-purple';
+    } else if (this.state.clickCount < 6) {
+      className = 'dark-purple';
+    } else if (this.state.clickCount < 9) {
+      className = 'purple';
+    } else if (this.state.clickCount < 12) {
+      className = 'light-red';
+    } else if (this.state.clickCount < 15) {
+      className = 'orange';
+    } else if (this.state.clickCount < 18) {
+      className = 'yellow';
+    } else {
+      className = 'white';
+    }
+
     return (
-      <button className={this.state.className} onClick={this.handleClick}>HOT BUTTON</button>
+      <button className={className} onClick={this.handleClick}>HOT BUTTON</button>
     );
   }
 }
