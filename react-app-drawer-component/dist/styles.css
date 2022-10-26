@@ -1,0 +1,108 @@
+@keyframes right-slide {
+  0% {
+    transform: translateX(-12rem);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes left-slide {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-12rem);
+  }
+}
+
+@keyframes darken-color {
+  0% {
+    background-color: rgb(0 0 0 / 0%);
+  }
+
+  100% {
+    background-color: rgb(0 0 0 / 40%);
+  }
+}
+
+@keyframes brighten-color {
+  0% {
+    background-color: rgb(0 0 0 / 40%);
+  }
+
+  100% {
+    background-color: rgb(0 0 0 / 0%);
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+i {
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  margin-top: 0.5rem;
+}
+
+h1,
+a {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.menu.modal {
+  position: fixed;
+  width: 12rem;
+  background-color: rgb(255 255 255);
+  box-shadow: -12px 0 8px -4px rgb(31 73 125 / 40%) inset;
+  padding: 1rem;
+}
+
+.slide-right {
+  animation: right-slide 0.15s linear;
+  transform: translateX(0);
+}
+
+.slide-left {
+  animation: left-slide 0.15s linear;
+  transform: translateX(-12rem);
+}
+
+.darken {
+  background-color: rgb(0 0 0 / 40%);
+  animation: darken-color 0.15s ease-in-out;
+}
+
+.brighten {
+  background-color: rgb(0 0 0 / 0%);
+  animation: brighten-color 0.15s ease-in-out;
+}
+
+.hidden {
+  display: none;
+}
