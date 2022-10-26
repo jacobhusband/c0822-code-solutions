@@ -1,0 +1,41 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+label,
+input,
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+label {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+p {
+  margin-left: 0.25rem;
+  margin-top: 0.25rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  position: absolute;
+}
+
+div {
+  display: flex;
+  align-items: center;
+  margin-top: 0.25rem;
+  gap: 0.5rem;
+}
+
+.green {
+  color: green;
+}
+
+.red {
+  color: red;
+}
