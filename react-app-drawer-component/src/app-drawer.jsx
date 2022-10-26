@@ -8,6 +8,7 @@ export default class AppDrawer extends React.Component {
       showingModal: false
     };
     this.handleClick = this.handleClick.bind(this);
+    this.handleAnimation = this.handleAnimation.bind(this);
   }
 
   handleClick(event) {
@@ -20,11 +21,14 @@ export default class AppDrawer extends React.Component {
       this.setState({
         isClicked: false
       });
-      setTimeout(() => {
-        this.setState({
-          showingModal: false
-        });
-      }, 150);
+    }
+  }
+
+  handleAnimation(event) {
+    if (event.target.matches('.modal.brighten')) {
+      this.setState({
+        showingModal: false
+      });
     }
   }
 
@@ -47,7 +51,7 @@ export default class AppDrawer extends React.Component {
     return (
       <>
         <i onClick={this.handleClick} className="fa-solid fa-bars"></i>
-        <div onClick={this.handleClick} className={modalClassName}>
+        <div onClick={this.handleClick} onAnimationEnd={this.handleAnimation} className={modalClassName}>
           <div className={menuModalClassName}>
             <h1>Menu</h1>
             <a onClick={this.handleClick} href="#">About</a>
