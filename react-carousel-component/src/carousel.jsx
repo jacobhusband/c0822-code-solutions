@@ -6,6 +6,27 @@ export default class Carousel extends React.Component {
     this.state = {
       currentId: 1
     };
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick(event, direction) {
+    if (direction === 'right' && this.state.currentId < this.props.images.length) {
+      this.setState({
+        currentId: this.state.currentId + 1
+      });
+    } else if (direction === 'right' && this.state.currentId === this.props.images.length) {
+      this.setState({
+        currentId: 1
+      });
+    } else if (direction === 'left' && this.state.currentId > 1) {
+      this.setState({
+        currentId: this.state.currentId - 1
+      });
+    } else if (direction === 'left' && this.state.currentId === 1) {
+      this.setState({
+        currentId: this.props.images.length
+      });
+    }
   }
 
   render() {
@@ -13,14 +34,14 @@ export default class Carousel extends React.Component {
       <div className='container'>
         <div className='row content'>
           <div className='col flex-col self-center'>
-            <i className="fa-solid fa-chevron-left"></i>
+            <i onClick={event => this.handleClick(event, 'left')} className="fa-solid fa-chevron-left"></i>
           </div>
           <div className='col flex-col'>
             <Pokemon images={this.props.images} currentId={this.state.currentId}/>
             <Dots images={this.props.images} currentId={this.state.currentId}/>
           </div>
           <div className='col flex-col self-center'>
-            <i className="fa-solid fa-chevron-right"></i>
+            <i onClick={event => this.handleClick(event, 'right')} className="fa-solid fa-chevron-right"></i>
           </div>
         </div>
       </div>
