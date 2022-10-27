@@ -7,6 +7,10 @@ export default class Carousel extends React.Component {
       currentId: 1
     };
     this.handleClick = this.handleClick.bind(this);
+    this.resetInterval = this.resetInterval.bind(this);
+    this.intervalId = setInterval(() => {
+      this.handleClick(null, 'right');
+    }, 3000);
   }
 
   handleClick(event, direction) {
@@ -29,19 +33,26 @@ export default class Carousel extends React.Component {
     }
   }
 
+  resetInterval(event) {
+    clearInterval(this.intervalId);
+    this.intervalId = setInterval(() => {
+      this.handleClick(null, 'right');
+    }, 3000);
+  }
+
   render() {
     return (
       <div className='container'>
         <div className='row content'>
           <div className='col flex-col self-center'>
-            <i onClick={event => this.handleClick(event, 'left')} className="fa-solid fa-chevron-left"></i>
+            <i onClick={event => { this.handleClick(event, 'left'); this.resetInterval(event); }} className="fa-solid fa-chevron-left"></i>
           </div>
           <div className='col flex-col'>
             <Pokemon images={this.props.images} currentId={this.state.currentId}/>
             <Dots images={this.props.images} currentId={this.state.currentId}/>
           </div>
           <div className='col flex-col self-center'>
-            <i onClick={event => this.handleClick(event, 'right')} className="fa-solid fa-chevron-right"></i>
+            <i onClick={event => { this.handleClick(event, 'right'); this.resetInterval(event); }} className="fa-solid fa-chevron-right"></i>
           </div>
         </div>
       </div>
