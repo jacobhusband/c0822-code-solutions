@@ -69,7 +69,7 @@ export default class App extends React.Component {
 
     for (var i = 0; i < this.state.todos.length; i++) {
       ind = (this.state.todos[i].todoId === todoId) && i;
-      if (ind) break;
+      if (ind !== undefined) break;
     }
 
     const isCompleted = this.state.todos[ind].isCompleted;
