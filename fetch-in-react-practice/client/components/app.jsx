@@ -72,7 +72,7 @@ export default class App extends React.Component {
       if (ind) break;
     }
 
-    const isCompleted = this.state.todos[i].isCompleted;
+    const isCompleted = this.state.todos[ind].isCompleted;
 
     const obj = { isCompleted: !isCompleted };
 
@@ -85,8 +85,7 @@ export default class App extends React.Component {
     }).then(res => res.json())
       .then(todo => {
         const todos = [...this.state.todos];
-        todos.splice(ind, 1);
-        todos.push(todo);
+        todos.splice(ind, 1, todo);
         this.setState({
           todos
         });
