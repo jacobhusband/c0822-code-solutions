@@ -1,0 +1,130 @@
+Features
+• User can sign up
+  1. When the navbar anchor sign-up is clicked the hash changes.
+  2. An event listener for hashchanges fires and changes the state of the route.
+  3. The change in state causes a render() of the App instance to fire.
+  4. The changed state of route makes the PageContainer component contain the child component of Auth with props for sign-up.
+  5. The Auth component shows a welcome message, renders the content outside of the form on the sign-up page.
+  6. There is a AuthForm component child to handle the form on the page.
+  7. When the user types in the input box for username or password there is an event handler function call that updates the state to match the event.target.value and event.target.name.
+  8. When the user clicks register a handleSubmit event handler method is called which sends a post request, via fetch, to /api/auth/sign-up with a content-type of application/json and a body that contains a stringified object with the username and password.
+    a. The server receives the request and checks if there is a missing username or password and throws an error if that is the case (400).
+    b. The argon2 package hashes the password and queries the database with SQL to insert into the database the username and password in the users table, then return the username, id, and the time it was created.
+    c. If it is successful a status of 201 is sent in the HTTP response along with the SQL that was returned from the database.
+    d. If it is not successful then the express server handles the error in with the catch having a return expression of next(err).
+  9. When the fetch promise resolves it streams data which is caught by a then method call on the fetch method call which returns a parsed JS object in a resolved promise.
+  10. That then method has another then method that receives the parsed JS object when the promise resolves.
+  11. The code block for that then method has a condition for sign-up where the window has a hash change to sign-in.
+  12. The event listener for hashchanges is triggered again and the state of route is updated to be sign-in.
+  13. The render function is called when the state changes.
+  14. The PageContainer has the child Auth again but the props passed to Auth is for sign-in now.
+
+• User can sign in
+  1. When the navbar anchor sign-in is clicked the hash changes.
+  2. An event listener for hashchanges fires and changes the state of the route.
+  3. The change in state causes a render() of the App instance to fire.
+  4. The changed state of route makes the PageContainer component contain the child component of Auth with props for sign-in.
+  5. The Auth component shows a welcome message, renders the content outside of the form on the sign-in page.
+  6. There is an AuthForm component child to handle the form on the page.
+  7. When the user types in the input box for username or password there is an event handler function call that updates the state to match the event.target.value and event.target.name.
+  8. When the user clicks log in a handleSubmit event handler method is called which sends a post request, via fetch, to /api/auth/sign-in with a content-type of application/json and a body that contains a stringified object with the username and password.
+    a. The server receives the request and checks if there is a missing username or password and throws an error if that is the case (401).
+    b. The database is queried for the unique identifier of username in the users table
+    c. If it is found then the columns userId and hashedPassword are selected for.
+    d. If the query is successful but the user is not found, then throw an error with a status of 401.
+    e. If the query is successful and there is a user then verify the hashed password with argon2:
+      1. If not matching throw an error status 401
+      2. If it is matching create a payload object and sign a token using the environmental token secret and the payload then save that as the token variable.
+      3. Send the token as prop token and the payload as prop user back as the HTTP response body.
+  9. When the fetch promise resolves it streams data which is caught by a then method call on the fetch method call which returns a parsed JS object in a resolved promise.
+  10. That then method has another then method that receives the parsed JS object when the promise resolves.
+  11. The code block for that then method has a condition for sign-in where a method for onSignIn is called from this.props with an argument containing the result of the fetch.
+  12. That onSignIn prop is the handleSignIn method of the App instance and it destructures the user an token from the result and saves it in localStorage.
+  13. The state of the user is then updated.
+  14. A change to state triggers the render method call renders the page the same as last time and the PageContainer still has the Auth component as a child.
+  15. The Auth componenet has its if (user) condition triggered and the Redirect component is returned with a prop "to" = "".
+  16. The Redirect component changes the hash to # which is the homepage.
+  17. When the hash changes the state of the route is updated.
+  18. When the state changes the page re-renders.
+  19. The render() method return expression now has the PageContainer load a child of the Home component.
+  20. The homepage renders a gif of Rick Astley
+
+• User can stay signed in
+  1. When the page componentDidMount method is fired after the constructore and the render method in the App instance, the state of the user is updated via the token pulled from localStorage and the state of isAuthorizing is set to false.
+  2. The first render does nothing until the componentDidMount method is called due to the condition of the state of authorization being true.
+  3. After the state updates in componentDidMount, the second render is able to render the page because the state of isAuthorizing is now false.
+
+• User can sign out
+  1. When the sign-out button is clicked on the navbar the event handler function handleSignOut is called in the instance of the App class.
+  2. LocalStorage is cleared and the state of user becomes null instead of the token.
+  3. Changes to state cause a re-render
+  4. The navbar component shows sign in and sign up anchor tags now that user is null.
+  5. The Home component is the child of the PageContainer component again.
+  6. In the Home component there is a condition that checks for user being null and if so the Redirect component is returned with prop to='sign-in'.
+  7. There is a hashchange to 'sign-in'
+  8. hashchanges trigger changes to the state property route
+  9. Changes to the state strigger re-renders.
+  10. The page now loads with PageContainer having a child of the Auth component.
+  11. The sign-in page is loaded with the sign-in props passed to AuthForm.
+
+Process
+
+Index.jsx
+1. Starts in index.jsx where React, ReactDOM, and App are imported.
+2. The div with a class of root is queried and saves in a container.
+3. ReactDOM uses the container to create a root.
+4. The root is used to render the application.
+  - The App that was imported from app.jsx is rendered to the screen
+
+App.jsx
+1. Imports packages of React and jwtDecode
+2. Imports modules from lib, pages, and components directory
+3. The class App being extended from React.Component is being exported as the default export and is being defined.
+4. When the exported class is called in index.jsx a process occurs
+  a. The constructor method runs and creates this.props, this.state, and binds event handler functions with "this".
+  b. Render runs where a stopper condition is triggered and the render automatically returns with null because authorization has not completed.
+  c. ComponentDidMount runs which listens for hashChanges and changes the state of the route when a hash is changed. A token is pulled from localstorage. A user is assigned the decoded token if there is one or null if not. The state is updated with the user and a signal that authorization is over.
+  d. A second render runs due to a change in state and the authorization is now false so the stopper condition is passed. Now values from the state are assigned to variables and event handler functions are assigned to variables. Those variables are then put into an object and saved as the contextValue. In the return of the render method, there is AppContext, a component that was imported and was created from React.createContext(). This component is a provider that passes the contextValue in its property "value". There are children of the AppContext component; Navbar and PageContainer. The PageContainer component has a child of a method call named renderPage. This method returns different components based on the state of the route. If the route is empty, then show the Home component, if route is at sign-in or sign-up show Auth component, if neither condition, show NotFound component.
+
+Navbar.jsx
+1. Imports react package and AppContext module
+2. Defines a default export class Navbar which extends from React.Component class.
+3. The context is received by assigning the imported AppContext to a static variable named contextType.
+4. The render function runs
+  a. Properties user and handleSignout are saved as variables from the context.
+  b. The navbar React elements are constructed via the return expression and there is a button with text "Sign Out" that calls the handleSignOut event handler function.
+  c. There are two anchor types with hash hrefs for Sign In and Sign Up.
+    1. When the anchors are clicks a hashchange event is fired and the listener in the instance of App class parses a new route and updates the route property of the state with the new route.
+    2. State changes trigger re-renders
+    3. The PageContainer component now has a new child which is the Auth component. This component is used for both sign-in and sign-out hashchanges.
+
+Auth.jsx
+1. Auth imports the React package as well as Redirect, AuthForm, and AppContext modules.
+2. A default class AuthPage is extended from React.Component class and defined.
+3. The context is assigned to this.context via assignment to static type variable contextType from the AppContext import.
+4. The render method runs:
+  a. User route and handleSignIn are destructured from the context object.
+  b. If the user prop already has a token, return the Redirect component to do a hashchange to the homepage.
+  c. Choose a welcome message based on the state of the route, sign-in gets one message and sign-up gets another.
+  d. The return expression creates React elements which has the page content for the sign-in and sign-up form.
+  e. An AuthForm component is used to handle the form: username, password, login, register. The component is passed props key and action which both have the route path as its value. There is a prop onSignIn with a value of event handler function handleSignIn passed as well.
+
+Authform.jsx
+1. React is imported from a package
+2. A default class Authform is extended from the React.Comonent class and defined.
+3. A constructor is run which assigned this.props, this.state (holds username and password), and event handler functions are bound to this (handleChange, handleSubmit).
+4. The render method runs where action is destructured from this.props object and event handler functions handleChange and handleSubmit are destructures from the this object.
+5. There are condition variables that change text and hrefs based on sign-up or sign-in being passed as the action prop.
+6. The return expression has a form with an onSubmit event handler of handleSubmit and inputs with onChange event handlers of handleChange.
+  a. Should the input value change the handleChange event handler will run and update the state with the event.target of the input element.
+  b. Should the sign-in or register button be clicked, the onSubmit event handler will run:
+    1. The action prop is destructured from this.props object.
+    2. The req variable will be assigned an object that has; a method of post, a header of application/json content-type, and a body of a stringified object containing the username and password.
+    3. A fetch is called with the path to the action (sign-in or sign-up) and the req object.
+      a. If the promise resolves:
+        1. Convert the response from string to JS as it streams with a then method call on the return of the fetch
+        2. Catch the completed conversion to JS with a then method call on the previous return of the then method call.
+        3. Check the action if it is sign-in or sign-up
+          a. If it is sign-up then change the hash to sign-in
+          b. If it is sign-in then run the handleSignIn method with the result of the JS from the resolved fetch and conversion.
+            1. Update the state with the signed in user and change localStorage to contain the token.
